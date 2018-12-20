@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-success" (click)="onNewMahasiswa()">Mahasiswa</button>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-mahasiswa-item
+      *ngFor="let mahasiswaEL of mahasiswas; let i = index"
+      [mahasiswa]="mahasiswaEL"
+      [index]="i"></app-mahasiswa-item>
+    </div>
+  </div>
+  <hr>

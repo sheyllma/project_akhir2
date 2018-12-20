@@ -1,0 +1,14 @@
+<div class="row" style="background-color:pink">
+  <div class="col-sm-5">
+    <app-mahasiswa-list></app-mahasiswa-list>
+  </div>
+  <div class ="col-sm-7">
+    <!-- <app-mahasiswa-detail
+    *ngIf="selectedMahasiswa;else infotext"
+    [mahasiswa]="selectedMahasiswa"></app-mahasiswa-detail>
+    <ng-template #infotext>
+      <p>Please Select Mahasiswa</p>
+    </ng-template> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
